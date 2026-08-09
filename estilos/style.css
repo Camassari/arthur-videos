@@ -117,6 +117,8 @@ div.thumbnail > img {
     width: 300px;
     height: 150px;
     border-radius: 10px;
+    aspect-ratio: 16/9;
+    object-fit: contain;
 }
 
 div.thumbnail > img:hover {
