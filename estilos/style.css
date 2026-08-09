@@ -150,4 +150,6 @@ footer > p {
     margin-top: 100px;
     color: var(--destaque);
     text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
 }
