@@ -24,6 +24,10 @@ body, html {
     color: var(--texto);
 }
 
+header {
+    width: 100vw;
+}
+
 nav {
     display: flex;
     border-bottom: 1px solid var(--destaque);
