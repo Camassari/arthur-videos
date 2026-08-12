@@ -17,6 +17,10 @@
 }
 
 body, html {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     width: 100vw;
     height: 100vh;
     background-color: var(--fundo-principal);
@@ -105,16 +109,21 @@ div#search {
 }
 
 main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 0px 20px;
     gap: 20px;
+    height: 100vw;
+    max-width: 60%;
 }
 
-@media screen and (max-width: 768px) {
-    main {
-        grid-template-columns: 1fr;
-    }
+main > h1 {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: var(--destaque);
+    margin-bottom: 20px;
+}
+
+main > p {
+    text-align: center;
 }
 
 div.thumbnail > img {
@@ -156,8 +165,10 @@ div.ft-criador > img {
 
 footer > p {
     margin-top: 100px;
-    color: var(--destaque);
+    color: var(--fundo-principal);
+    background-color: var(--destaque);
     text-align: center;
     font-weight: bold;
     text-decoration: underline;
+    padding: 10px;
 }
